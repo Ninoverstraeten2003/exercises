@@ -10,4 +10,3 @@ with open('input.md') as f:
         g.write(content)
     
         
-    

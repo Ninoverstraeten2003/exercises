@@ -1,6 +1,6 @@
-from cmath import inf
+"""from cmath import inf"""
 import csv
-from numpy import sort
+"""from numpy import sort"""
 
 
 with open("exam-schedule.csv") as csv_file:

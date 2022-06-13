@@ -1,0 +1,2 @@
+print(from_morse("..   .- --"))
+    

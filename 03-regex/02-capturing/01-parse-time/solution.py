@@ -1,3 +1,4 @@
+from ast import parse
 import re
 
 def parse_time(string):
@@ -8,3 +9,4 @@ def parse_time(string):
         return tuple( [ int(x) for x in match.groups('000') ] )
     else:
         return None
+

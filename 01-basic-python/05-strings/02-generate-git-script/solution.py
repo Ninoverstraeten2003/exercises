@@ -11,3 +11,4 @@ def generate_git_script(id):
     '''
 
     return dedent(string).strip()
+

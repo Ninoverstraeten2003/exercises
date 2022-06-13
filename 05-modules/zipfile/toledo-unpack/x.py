@@ -12,6 +12,7 @@ def path_dir_name(name):
 
 with ZipFile(root, 'r') as zip:
     txt = [i for i in zip.namelist() if Path(i).suffix == ".txt"]
+
     otherfiles = [i for i in zip.namelist() if Path(i).suffix != ".txt"]
     student_files = []
     for t in txt:
@@ -20,6 +21,7 @@ with ZipFile(root, 'r') as zip:
             if Path(t).stem == Path(o).stem:
                 tx.append(o)
         student_files.append(tuple(tx))
+    print(student_files)
                 
     for i in student_files:
         txt , *otherfiles = i
